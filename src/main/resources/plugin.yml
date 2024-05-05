@@ -1,0 +1,9 @@
+name: DoubleMineral
+version: 1.1
+main: soys.doublemineral.Main
+authors: [soys]
+commands:
+  doublemineral:
+    aliases:
+      - dmineral
+    description: /dmineral reload
