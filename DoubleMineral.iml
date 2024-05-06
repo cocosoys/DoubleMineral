@@ -29,16 +29,5 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/[领地] Residence.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/libs/[领地] Residence.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>
