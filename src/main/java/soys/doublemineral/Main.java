@@ -6,6 +6,7 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.craftbukkit.v1_8_R3.block.CraftBlockState;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -134,7 +135,8 @@ public class Main extends JavaPlugin implements Listener {
         sendTestModPluginText("随机掉落: "+randomCount);
 
         if(randomCount>0){
-            ItemStack itemBlock=new ItemStack(block.getType(),randomCount,block.getType().getMaxDurability());
+            ItemStack itemBlock= block.getState().getData().toItemStack(randomCount);
+            //ItemStack itemBlock=new ItemStack(block.getType(),randomCount,block.getData());
             block.getWorld().dropItem(e.getBlock().getLocation(), itemBlock);
             sendTestModPluginText("随机掉落成功 ");
             return;
